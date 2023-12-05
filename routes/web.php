@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\materiasController;
 use App\Http\Controllers\AdminSettingsController;
 use App\Http\Controllers\DocenteController;
-
+use App\Http\Controllers\CronogramaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,12 +31,10 @@ Route::middleware([
 
 
 //  route::resource('materias',[materiasController::class,'index']);
-
-
 // Route::get('HomeController', [HomeController::class, 'index']);
 // Route::get('materias', [MateriasController::class, 'index']);
 Route::resource('docente', DocenteController::class)->names('docente');
-
+Route::resource('cronograma', CronogramaController::class)->names('cronograma');
 // Route::resource('docente', 'DocenteController@index')->name(class::'docente');
 
 

@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('cronogramas', function (Blueprint $table) {
             $table->id();
+            $table->integer('ci');
+            $table->string('nombre');
+            $table->integer('telefono');
+            $table->string('correo');
+            $table->string('imagen')->nullable();
             $table->timestamps();
         });
     }
@@ -20,7 +25,7 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('cronogramas');
     }

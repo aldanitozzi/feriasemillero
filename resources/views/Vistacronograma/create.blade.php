@@ -6,7 +6,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="shadow-lg sm:rounded-lg bg-white overflow-hidden p-6 border rounded-lg"
                 style="font-family: 'Verdana', sans-serif;">
-                <p class="text-center font-semibold mb-4">Agregar docente</p>
+                <p class="text-center font-semibold mb-4">Curso</p>
                 <form action="{{ route('cronograma.store') }}" method="POST" enctype="multipart/form-data"
                     class="grid {{-- En dispositivos grandes muestra 2 columnas --}} md:grid-cols-2 gap-4">
                     @csrf

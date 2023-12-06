@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Calificaciones1;
+use App\Models\Calificaciones;
 use Illuminate\Http\Request;
 
-class Calificaciones1Controller extends Controller
+class CalificacionesController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $cronograma = Calificaciones1::get();
+        $cronograma = Calificaciones::get();
         return view('VistaCalificaciones.index',compact('cronograma'));   //
     }
 
@@ -35,7 +35,7 @@ class Calificaciones1Controller extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Calificaciones1 $calificaciones1)
+    public function show(Calificaciones $calificaciones1)
     {
         //
     }
@@ -43,7 +43,7 @@ class Calificaciones1Controller extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Calificaciones1 $calificaciones1)
+    public function edit(Calificaciones $calificaciones1)
     {
         //
     }
@@ -51,7 +51,7 @@ class Calificaciones1Controller extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Calificaciones1 $calificaciones1)
+    public function update(Request $request, Calificaciones $calificaciones1)
     {
         //
     }
@@ -59,7 +59,7 @@ class Calificaciones1Controller extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Calificaciones1 $calificaciones1)
+    public function destroy(Calificaciones $calificaciones1)
     {
         //
     }

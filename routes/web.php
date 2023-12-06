@@ -6,7 +6,7 @@ use App\Http\Controllers\AdminSettingsController;
 use App\Http\Controllers\calificaciones;
 use App\Http\Controllers\DocenteController;
 use App\Http\Controllers\CronogramaController;
-use App\Http\Controllers\Calificaciones1Controller;
+use App\Http\Controllers\Calificaciones1sController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,7 +37,7 @@ Route::middleware([
 // Route::get('materias', [MateriasController::class, 'index']);
 Route::resource('docente', DocenteController::class)->names('docente');
 Route::resource('cronogrrama', CronogramaController::class)->names('cronograma');
-Route::resource('calificaiones', Calificaciones1Controller::class)->names('calificaiones');
+Route::resource('calificaiones', Calificaciones1sController::class)->names('calificaiones');
 // Route::resource('docente', 'DocenteController@index')->name(class::'docente');
 
 

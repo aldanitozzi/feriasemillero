@@ -6,7 +6,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="shadow-lg sm:rounded-lg bg-white overflow-hidden p-6 border rounded-lg"
                 style="font-family: 'Verdana', sans-serif;">
-                <p class="text-center font-semibold mb-4">Curso</p>
+                <p class="text-center font-semibold mb-4">Agregar nota</p>
                 <form action="{{ route('cronograma.store') }}" method="POST" enctype="multipart/form-data"
                     class="grid {{-- En dispositivos grandes muestra 2 columnas --}} md:grid-cols-2 gap-4">
                     @csrf
@@ -17,14 +17,36 @@
                     <input type="text" name="nombre" id="nombre"
                         class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required
                         placeholder="nombre">
-                    <input type="text" name="telefono" id="telefono"
+                    <input type="text" name="matematicas" id="matematicas"
                         class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                        placeholder="telefono">
-                    <input type="text" name="correo" id="correo"
+                        placeholder="matematicas">
+                    <input type="text" name="fisica" id="fisica"
                         class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                        placeholder="correo">
-
-
+                        placeholder="fisica">
+                    <input type="text" name="quimica" id="quimica"
+                        class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="quimica">
+                    <input type="text" name="lenguaje" id="lenguaje"
+                        class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="lenguaje">
+                    <input type="text" name="musica" id="musica"
+                        class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="musica">
+                    <input type="text" name="psicologia" id="psicologia"
+                        class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="psicologia">
+                    <input type="text" name="educacion_fisica" id="educacion_fisica"
+                        class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="educacion_fisica">
+                    <input type="text" name="sociales" id="sociales"
+                        class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="sociales">
+                    <input type="text" name="religion" id="religion"
+                        class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="religion">
+                    <input type="text" name="artes_plasticas" id="religion"
+                        class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        placeholder="religion">
                     <!-- Dropdowns -->
 
 

@@ -324,36 +324,39 @@ return [
             'url'  => 'docente',
             'icon' => 'fas fa-fw fa-user',
         ],
+        
         [
             'text' => 'CRONOGRAMA',
-            'url'  => 'admin/cronograma',
+            'url'  => 'cronograma',
             'icon' => 'fas fa-fw fa-lock',
 
         ],
         [
             'text'    => 'CALIFICACIONES',
+            'url'  => 'calificaciones',
             'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'PRIMER BIMESTRE',
-                    'url'  => '#',
+        ]
+            // 'submenu' => [
+            //     [
+            //         'text' => 'PRIMER BIMESTRE',
+            //         'url'  => '#',
 
-                ],
-                [
-                    'text' => 'SEGUNDO BIMESTRE',
-                    'url'  => '#',
+            //     ],
+            //     [
+            //         'text' => 'SEGUNDO BIMESTRE',
+            //         'url'  => '#',
 
-                ],
-                [
-                    'text' => 'TERCER BIMESTRE',
-                    'url'  => '#',
+            //     ],
+            //     [
+            //         'text' => 'TERCER BIMESTRE',
+            //         'url'  => '#',
 
-                ],
-                [
-                    'text' => 'CUARTO BIMESTRE',
-                    'url'  => '#',
+            //     ],
+            //     [
+            //         'text' => 'CUARTO BIMESTRE',
+            //         'url'  => '#',
 
-               ],
+            //    ],
         //         [
         //             'text'    => 'SEGUNDO BIMESTRE',
         //             'url'     => '#',
@@ -382,24 +385,24 @@ return [
         //             'text' => 'level_one',
         //             'url'  => '#',
         //         ],
-        ],
-        ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
-        ],
+    //     ],
+    //     ],
+    //     ['header' => 'labels'],
+    //     [
+    //         'text'       => 'important',
+    //         'icon_color' => 'red',
+    //         'url'        => '#',
+    //     ],
+    //     [
+    //         'text'       => 'warning',
+    //         'icon_color' => 'yellow',
+    //         'url'        => '#',
+    //     ],
+    //     [
+    //         'text'       => 'information',
+    //         'icon_color' => 'cyan',
+    //         'url'        => '#',
+    //     ],
     ],
 
     /*

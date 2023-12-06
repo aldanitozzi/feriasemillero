@@ -33,19 +33,26 @@ class CronogramaController extends Controller
         $cronograma = new cronograma(); // Cambia 'producto' por 'Producto' si es el nombre correcto de tu modelo
         $cronograma->ci = $d->ci;
         $cronograma->nombre =$d->nombre;
-        $cronograma->telefono = $d->telefono;
-        $cronograma->correo = $d->correo;
+        $cronograma->matematicas = $d->matematicas;
+        $cronograma->fisica = $d->fisica;
+        $cronograma->quimica = $d->quimica;
+        $cronograma->lenguaje = $d->lenguaje;
+        $cronograma->musica = $d->musica;
+        $cronograma->psicologia = $d->psicologia;
+        $cronograma->educacion_fisica = $d->educacion_fisica;
+        $cronograma->sociales = $d->sociales;
+        $cronograma->religion = $d->religion;
+        $cronograma->artes_plasticas = $d->artes_plasticas;
         $cronograma->imagen = $d->imagen;
 
 
 
         if ($imagen = $d->file('imagen')) {
             $rutaGuardarImg = 'imagen/';
-            $imagenCronogama = date('YmdHis') . "." . $imagen->getClientOriginalExtension();
+            $imagenCronograma = date('YmdHis') . "." . $imagen->getClientOriginalExtension();
             $imagen->move($rutaGuardarImg, $imagenCronograma);
             $cronograma->imagen = $imagenCronograma;
         }
-
         $cronograma->save();
 
 
@@ -63,7 +70,9 @@ class CronogramaController extends Controller
      * Show the form for editing the specified resource.
      */
     public function edit(cronograma $cronograma)
+
     {
+        $cronograma = cronograma::all();
         return view('Vistacronograma.edit', compact('cronograma'));  //
     }
 
@@ -74,8 +83,16 @@ class CronogramaController extends Controller
     {
         $cronograma->ci = $r->input('ci'); // Campo 'ci'
         $cronograma->nombre = $r->input('nombre'); // Campo 'nombre'
-        $cronograma->telefono = $r->input('telefono'); // Campo 'celular'
-        $cronograma->correo = $r->input('correo'); // Campo 'correo'
+        $cronograma->matematicas = $r->input('matematicas'); // Campo 'celular'
+        $cronograma->fisica = $r->input('fisica');
+        $cronograma->quimica = $r->input('quimica');
+        $cronograma->lenguaje = $r->input('lenguaje');
+        $cronograma->musica = $r->input('musica');
+        $cronograma->psicologia = $r->input('psicologia');
+        $cronograma->educacion_fisica = $r->input('educacion_fisica');
+        $cronograma->sociales = $r->input('sociales');
+        $cronograma->religion = $r->input('religion');
+        $cronograma->artes_plasticas = $r->input('artes_plasticas');
         $cronograma->imagen = $r->input('imagen'); // Campo 'direccion'
 
         // Actualiza otros campos según sea necesario

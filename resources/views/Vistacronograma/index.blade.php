@@ -9,7 +9,7 @@
     <a href="#">Importar</a> --}}
     <a href="{{ route('cronograma.create') }}"
         class="bg-gray-500  hover:bg-gray-700  text-white font-bold py-1 px-3 rounded ml-1 mt-1">
-        Agregar docente
+        Agregar alumno
     </a>
 </div>
 {{-- <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
@@ -22,13 +22,21 @@
         </div>
     @endforeach
 </div> --}}
-<div class="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+{{-- <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
     @foreach ($cronograma as $cronogramas)
         <div class="bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
             <img src="/imagen/{{ $cronogramas->imagen }}" class="w-20 h-20 rounded mx-auto" alt="">
-            <p class="text-blue-800 font-bold text-xl mt-4">Nombre: {{ $cronogramas->nombre }}</p>
-            <p class="text-gray-600">Correo: {{ $cronogramas->correo }}</p>
-            <p class="text-gray-600">Telefono: {{ $cronogramas->telefono }}</p>
+             <p class="text-blue-800 nt-bold text-xl mt-4fo">NOMBRE: {{ $cronogramas->nombre }}</p>
+            <p class="text-gray-600">CI: {{ $cronogramas->ci }}</p>
+            <p class="text-gray-600">MATEMATICAS: {{ $cronogramas->matematicas }}</p>
+            <p class="text-gray-600">FISICA: {{ $cronogramas->fisica }}</p>
+            <p class="text-gray-600">QUIMICA: {{ $cronogramas->quimica }}</p>
+            <p class="text-gray-600">LENGUAJE: {{ $cronogramas->lenguaje }}</p>
+            <p class="text-gray-600">MUSICA: {{ $cronogramas->musica }}</p>
+            <p class="text-gray-600">PSICOLOGIA: {{ $cronogramas->psicologia }}</p>
+            <p class="text-gray-600">EDUCACION_FISICA: {{ $cronogramas->educacion_fisica }}</p>
+            <p class="text-gray-600">RELIGION: {{ $cronogramas->religion }}</p>
+            <p class="text-gray-600">ARTES_PLASTICAS: {{ $cronogramas->artes_plasticas }}</p>
             <div class="flex justify-center">
                 <a title="EDITAR" type="button" href="{{ route('cronograma.edit', $cronogramas->id) }}"
                     class="   rounded-lg w-fit p-2 mx-2 text-white
@@ -42,8 +50,38 @@
 
             </div>
         </div>
-    @endforeach
-</div>
+    @endforeach --}}
+    <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+        @foreach ($cronograma as $cronogramas)
+            <div class="bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+                <img src="/imagen/{{ $cronogramas->imagen }}" class="w-20 h-20 rounded mx-auto" alt="">
+                <p class="text-blue-600">NOMBRE: {{ $cronogramas->nombre }}</p>
+                <p class="text-gray-600">CI: <span class="{{ $cronogramas->ci < 50 ? 'text-red-500' : '' }}">{{ $cronogramas->ci }}</span></p>
+                <p class="text-gray-600">MATEMATICAS: <span class="{{ $cronogramas->matematicas < 50 ? 'text-red-500' : '' }}">{{ $cronogramas->matematicas }}</span></p>
+                <p class="text-gray-600">FISICA: <span class="{{ $cronogramas->fisica < 50 ? 'text-red-500' : '' }}">{{ $cronogramas->fisica }}</span></p>
+                <p class="text-gray-600">QUIMICA: <span class="{{ $cronogramas->quimica < 50 ? 'text-red-500' : '' }}">{{ $cronogramas->quimica }}</span></p>
+                <p class="text-gray-600">LENGUAJE: <span class="{{ $cronogramas->lenguaje < 50 ? 'text-red-500' : '' }}">{{ $cronogramas->lenguaje }}</span></p>
+                <p class="text-gray-600">MUSICA: <span class="{{ $cronogramas->musica < 50 ? 'text-red-500' : '' }}">{{ $cronogramas->musica }}</span></p>
+                <p class="text-gray-600">PSICOLOGIA: <span class="{{ $cronogramas->psicologia < 50 ? 'text-red-500' : '' }}">{{ $cronogramas->psicologia }}</span></p>
+                <p class="text-gray-600">EDUCACION_FISICA: <span class="{{ $cronogramas->educacion_fisica < 50 ? 'text-red-500' : '' }}">{{ $cronogramas->educacion_fisica }}</span></p>
+                <p class="text-gray-600">RELIGION: <span class="{{ $cronogramas->religion < 50 ? 'text-red-500' : '' }}">{{ $cronogramas->religion }}</span></p>
+                <p class="text-gray-600">ARTES_PLASTICAS: <span class="{{ $cronogramas->artes_plasticas < 50 ? 'text-red-500' : '' }}">{{ $cronogramas->artes_plasticas }}</span></p>
+                <p class="text-gray-600">SOCIALES: <span class="{{ $cronogramas->sociales < 50 ? 'text-red-500' : '' }}">{{ $cronogramas->sociales }}</span></p>
+                <div class="flex justify-center">
+                    <a title="EDITAR" type="button" href="{{ route('cronograma.edit', $cronogramas->id) }}"
+                        class="rounded-lg w-fit p-2 mx-2 text-white hover:scale-125 transition-transform delay-75 bg-blue-800">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        @endforeach
+    </div>
+
 
 
 

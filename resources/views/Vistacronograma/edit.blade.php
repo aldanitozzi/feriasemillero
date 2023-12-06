@@ -22,18 +22,57 @@
                             <input type="text" name="nombre" id="nombre" value="{{ $cronograma->nombre }}"
                                 class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400">
                         </div>
+
                         <div>
-                            <label for="telefono" class="block text-gray-700 text-sm font-bold mb-2">telefono</label>
-                            <input type="text" name="telefono" id="telefono" value="{{ $cronograma->telefono }}"
+                            <label for="matematicas" class="block text-gray-700 text-sm font-bold mb-2">matematicas</label>
+                            <input type="text" name="matematicas" id="matematicas" value="{{ $cronograma->matematicas }}"
                                 class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400">
                         </div>
                         <div>
-                            <label for="correo" class="block text-gray-700 text-sm font-bold mb-2">correo</label>
-                            <input type="text" name="correo" id="correo" value="{{ $cronograma->correo }}"
+                            <label for="fisica" class="block text-gray-700 text-sm font-bold mb-2">fisica</label>
+                            <input type="text" name="fisica" id="fisica" value="{{ $cronograma->fisica }}"
                                 class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400">
                         </div>
-
-
+                        <div>
+                            <label for="quimica" class="block text-gray-700 text-sm font-bold mb-2">quimica</label>
+                            <input type="text" name="quimica" id="quimica" value="{{ $cronograma->quimica }}"
+                                class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div>
+                            <label for="lenguaje" class="block text-gray-700 text-sm font-bold mb-2">lenguaje</label>
+                            <input type="text" name="lenguaje" id="lenguaje" value="{{ $cronograma->lenguaje }}"
+                                class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div>
+                            <label for="musica" class="block text-gray-700 text-sm font-bold mb-2">musica</label>
+                            <input type="text" name="musica" id="lenguaje" value="{{ $cronograma->musica }}"
+                                class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div>
+                            <label for="psicologia" class="block text-gray-700 text-sm font-bold mb-2">psicologia</label>
+                            <input type="psicologia" name="psicologia" id="psicologia" value="{{ $cronograma->psicologia }}"
+                                class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div>
+                            <label for="educacion_fisica" class="block text-gray-700 text-sm font-bold mb-2">educacion_fisica</label>
+                            <input type="educacion_fisica" name="educacion_fisica" id="educacion_fisica" value="{{ $cronograma->educacion_fisica }}"
+                                class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div>
+                            <label for="religion" class="block text-gray-700 text-sm font-bold mb-2">religion</label>
+                            <input type="religion" name="religion" id="religion" value="{{ $cronograma->religion }}"
+                                class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div>
+                            <label for="artes_plasticas" class="block text-gray-700 text-sm font-bold mb-2">artes_plasticas</label>
+                            <input type="artes_plasticas" name="artes_plasticas" id="artes_plasticas" value="{{ $cronograma->artes_plasticas }}"
+                                class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
+                        <div>
+                            <label for="sociales" class="block text-gray-700 text-sm font-bold mb-2">sociales</label>
+                            <input type="sociales" name="sociales" id="sociales" value="{{ $cronograma->sociales }}"
+                                class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        </div>
                     <!-- Imagen -->
                      <div class="flex items-center justify-center">
                         <div class="grid grid-cols-1 mt-1">

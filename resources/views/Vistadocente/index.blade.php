@@ -25,9 +25,11 @@
     @foreach ($docente as $docentes)
         <div class="bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
             <img src="/imagen/{{ $docentes->imagen }}" class="w-20 h-20 rounded mx-auto" alt="">
-            <p class="text-blue-800 font-bold text-xl mt-4">Nombre: {{ $docentes->nombre }}</p>
-            <p class="text-gray-600">Correo: {{ $docentes->correo }}</p>
-            <p class="text-gray-600">Telefono: {{ $docentes->telefono }}</p>
+            <p class="text-gray-600">AREA: {{ $docentes->area }}</p>
+            <p class="text-blue-600">NOMBRE: {{ $docentes->nombre }}</p>
+            <p class="text-gray-600">TELEFONO: {{ $docentes->telefono }}</p>
+            <p class="text-gray-600">CORREO: {{ $docentes->correo }}</p>
+
             <div class="flex justify-center">
                 <a title="EDITAR" type="button" href="{{ route('docente.edit', $docentes->id) }}"
                     class="   rounded-lg w-fit p-2 mx-2 text-white

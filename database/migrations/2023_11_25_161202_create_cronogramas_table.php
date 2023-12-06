@@ -15,10 +15,19 @@ return new class extends Migration
             $table->id();
             $table->integer('ci');
             $table->string('nombre');
-            $table->integer('telefono');
-            $table->string('correo');
+            $table->integer('matematicas');
+            $table->integer('fisica');
+            $table->integer('quimica');
+            $table->integer('lenguaje');
+            $table->integer('musica');
+            $table->integer('psicologia');
+            $table->integer('educacion_fisica');
+            $table->integer('religion');
+            $table->integer('artes_plasticas');
+            $table->integer('sociales');
             $table->string('imagen')->nullable();
             $table->timestamps();
+
         });
     }
 

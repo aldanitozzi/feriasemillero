@@ -31,7 +31,7 @@ class DocenteController extends Controller
     public function store(Request $d)
     {
         $docente = new docente(); // Cambia 'producto' por 'Producto' si es el nombre correcto de tu modelo
-        $docente->ci = $d->ci;
+        $docente->area = $d->area;
         $docente->nombre =$d->nombre;
         $docente->telefono = $d->telefono;
         $docente->correo = $d->correo;
@@ -73,7 +73,7 @@ class DocenteController extends Controller
      */
     public function update(Request $r, docente $docente)
     {
-        $docente->ci = $r->input('ci'); // Campo 'ci'
+        $docente->area = $r->input('area'); // Campo 'ci'
         $docente->nombre = $r->input('nombre'); // Campo 'nombre'
         $docente->telefono = $r->input('telefono'); // Campo 'celular'
         $docente->correo = $r->input('correo'); // Campo 'correo'

@@ -11,9 +11,9 @@
                     class="grid {{-- En dispositivos grandes muestra 2 columnas --}} md:grid-cols-2 gap-4">
                     @csrf
                     <!-- Inputs simplificados usando clases de Tailwind CSS -->
-                    <input type="text" name="ci" id="ci"
+                    <input type="text" name="area" id="area"
                         class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required
-                        placeholder="ci">
+                        placeholder="area">
                     <input type="text" name="nombre" id="nombre"
                         class="border rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required
                         placeholder="nombre">

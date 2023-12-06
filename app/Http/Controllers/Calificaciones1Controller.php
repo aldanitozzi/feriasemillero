@@ -12,7 +12,7 @@ class Calificaciones1Controller extends Controller
      */
     public function index()
     {
-       
+        $cronograma = Calificaciones1::get();
         return view('VistaCalificaciones.index',compact('cronograma'));   //
     }
 
